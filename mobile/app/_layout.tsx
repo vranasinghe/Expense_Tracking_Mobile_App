@@ -11,6 +11,7 @@ import {
   Poppins_700Bold,
 } from '@expo-google-fonts/poppins';
 import * as SplashScreen from 'expo-splash-screen';
+import WebAlertHost from '../components/ui/WebAlertHost';
 
 // Prevent the splash screen from auto-hiding before fonts are ready
 SplashScreen.preventAutoHideAsync().catch(() => {});
@@ -49,6 +50,7 @@ export default function RootLayout() {
         <Stack.Screen name="(onboarding)" />
         <Stack.Screen name="(tabs)" />
       </Stack>
+      <WebAlertHost />
     </GestureHandlerRootView>
   );
 }
