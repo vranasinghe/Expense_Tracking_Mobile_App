@@ -20,7 +20,7 @@ import { FontSize, Spacing, Radius } from '../../constants/theme';
 const slides = [
   {
     id: '1',
-    title: 'Track Every Rupee,\nEffortlessly',
+    title: 'Track Every Dollar,\nEffortlessly',
     subtitle: 'Log expenses in seconds, always know where your money goes.',
     icon: 'wallet-outline' as const,
     iconBg: '#1E2D4A',
@@ -107,11 +107,11 @@ export default function SplashScreen() {
                 {/* Floating stat cards */}
                 <View style={styles.floatCard1}>
                   <Ionicons name="trending-up" size={14} color={Colors.income} />
-                  <Text style={styles.floatText}>+₹8,500</Text>
+                  <Text style={styles.floatText}>+$850</Text>
                 </View>
                 <View style={styles.floatCard2}>
                   <Ionicons name="receipt-outline" size={14} color={Colors.expense} />
-                  <Text style={styles.floatText2}>₹1,250</Text>
+                  <Text style={styles.floatText2}>$42</Text>
                 </View>
               </LinearGradient>
             </View>

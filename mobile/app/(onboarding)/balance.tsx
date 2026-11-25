@@ -28,6 +28,7 @@ export default function BalanceScreen() {
   const [loading, setLoading] = useState(false);
   const setAccountSetup = useAppStore((s) => s.setAccountSetup);
   const user = useAppStore((s) => s.user);
+  const currency = useAppStore((s) => s.currency);
 
   const handleKey = (key: string) => {
     if (key === '⌫') {
@@ -95,7 +96,7 @@ export default function BalanceScreen() {
 
         {/* Amount Display */}
         <View style={styles.amountDisplay}>
-          <Text style={styles.currencySymbol}>₹</Text>
+          <Text style={styles.currencySymbol}>{currency}</Text>
           <Text style={styles.amountText} numberOfLines={1} adjustsFontSizeToFit>
             {amount === '0' ? '0' : amount}
           </Text>

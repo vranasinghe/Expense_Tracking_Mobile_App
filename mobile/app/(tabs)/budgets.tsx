@@ -73,8 +73,8 @@ export default function BudgetsScreen() {
               <View>
                 <Text style={styles.overallLabel}>Overall Budget</Text>
                 <Text style={styles.overallAmount}>
-                  {currency}{totalSpent.toLocaleString('en-IN')}
-                  <Text style={styles.overallLimit}> / {currency}{totalBudget.toLocaleString('en-IN')}</Text>
+                  {currency}{totalSpent.toLocaleString('en-US')}
+                  <Text style={styles.overallLimit}> / {currency}{totalBudget.toLocaleString('en-US')}</Text>
                 </Text>
               </View>
               <Text style={[
@@ -158,7 +158,7 @@ export default function BudgetsScreen() {
                 value={limitAmount}
                 onChangeText={setLimitAmount}
                 keyboardType="numeric"
-                placeholder="5,000"
+                placeholder="500"
                 placeholderTextColor={Colors.textSecondary}
               />
             </View>
