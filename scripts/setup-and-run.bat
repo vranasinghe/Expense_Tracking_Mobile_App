@@ -4,7 +4,7 @@ echo   ExpenseTracker - React Native (Expo) App Setup
 echo ====================================================
 echo.
 echo Changing directory to mobile app...
-cd /d "%~dp0mobile"
+cd /d "%~dp0..\mobile"
 echo.
 echo Installing dependencies...
 call npm install
