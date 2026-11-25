@@ -2,7 +2,7 @@ import type { Transaction } from '../store/types';
 
 export function formatDate(isoString: string): string {
   const date = new Date(isoString);
-  return date.toLocaleDateString('en-IN', {
+  return date.toLocaleDateString('en-US', {
     day: '2-digit',
     month: 'short',
     year: 'numeric',
@@ -11,7 +11,7 @@ export function formatDate(isoString: string): string {
 
 export function formatTime(isoString: string): string {
   const date = new Date(isoString);
-  return date.toLocaleTimeString('en-IN', {
+  return date.toLocaleTimeString('en-US', {
     hour: '2-digit',
     minute: '2-digit',
     hour12: true,
@@ -26,12 +26,12 @@ export function formatDateShort(isoString: string): string {
 
   if (isSameDay(date, today)) return 'Today';
   if (isSameDay(date, yesterday)) return 'Yesterday';
-  return date.toLocaleDateString('en-IN', { day: '2-digit', month: 'short' });
+  return date.toLocaleDateString('en-US', { day: '2-digit', month: 'short' });
 }
 
 export function formatMonthYear(year: number, month: number): string {
   const date = new Date(year, month, 1);
-  return date.toLocaleDateString('en-IN', { month: 'long', year: 'numeric' });
+  return date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 }
 
 export function isSameDay(a: Date, b: Date): boolean {

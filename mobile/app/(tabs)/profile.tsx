@@ -21,7 +21,7 @@ import { FontSize, Spacing, Radius, Shadows } from '../../constants/theme';
 import type { Currency } from '../../store/types';
 import TransactionHistory from '../../components/screens/TransactionHistory';
 
-const CURRENCIES: Currency[] = ['₹', '$', '€', '£'];
+const CURRENCIES: Currency[] = ['$', '€', '£', '¥'];
 
 interface SettingRowProps {
   icon: string;
@@ -148,7 +148,7 @@ export default function ProfileScreen() {
           <SettingRow
             icon="wallet-outline"
             label="Starting Balance"
-            sublabel={`${currency}${startingBalance.toLocaleString('en-IN')}`}
+            sublabel={`${currency}${startingBalance.toLocaleString('en-US')}`}
             onPress={() => setShowBalanceModal(true)}
           />
           <View style={styles.separator} />
