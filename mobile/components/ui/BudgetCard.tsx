@@ -36,6 +36,8 @@ export default function BudgetCard({
     <TouchableOpacity
       style={styles.card}
       onPress={onPress}
+      onLongPress={onDelete}
+      delayLongPress={400}
       activeOpacity={0.8}
     >
       {/* Header row */}

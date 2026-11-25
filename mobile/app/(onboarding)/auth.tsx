@@ -54,7 +54,7 @@ export default function AuthScreen() {
       setTimeout(() => {
         setLoading(false);
         useAppStore.setState({
-          user: { name: mode === 'signup' ? name : 'Arjun Sharma', email, avatarColor: '#2ED9A0' }
+          user: { name: mode === 'signup' ? name : 'Alex Morgan', email, avatarColor: '#2ED9A0' }
         });
         router.replace('/(onboarding)/balance');
       }, 800);
@@ -114,7 +114,7 @@ export default function AuthScreen() {
                 <Ionicons name="person-outline" size={18} color={Colors.textSecondary} style={styles.inputIcon} />
                 <TextInput
                   style={styles.input}
-                  placeholder="Arjun Sharma"
+                  placeholder="Alex Morgan"
                   placeholderTextColor={Colors.textPlaceholder}
                   value={name}
                   onChangeText={setName}

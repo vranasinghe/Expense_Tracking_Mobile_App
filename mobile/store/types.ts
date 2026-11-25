@@ -35,7 +35,7 @@ export interface UserProfile {
   avatarColor: string;
 }
 
-export type Currency = '₹' | '$' | '€' | '£';
+export type Currency = '$' | '€' | '£' | '¥';
 
 export interface AppState {
   // Auth state

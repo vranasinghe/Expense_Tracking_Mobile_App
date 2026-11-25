@@ -30,6 +30,8 @@ export default function TransactionRow({
     <TouchableOpacity
       style={styles.container}
       onPress={onPress}
+      onLongPress={onDelete}
+      delayLongPress={400}
       activeOpacity={0.7}
     >
       {/* Icon */}
